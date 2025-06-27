@@ -1,4 +1,12 @@
-/* Cloud background */
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Cloud Header Section */
 .hero {
     background: url('https://upload.wikimedia.org/wikipedia/commons/9/9b/Cumulus_clouds_in_fair_weather.jpeg');
     background-size: cover;
@@ -10,21 +18,21 @@
 }
 
 .hero h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
 .hero h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin-bottom: 5px;
 }
 
 .hero h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #333;
 }
 
-/* Navigation */
+/* Navigation Bar */
 nav {
     background: linear-gradient(to right, #5fc9f3, #3498db);
     padding: 12px 0;
@@ -46,46 +54,15 @@ nav a:hover {
     text-decoration: underline;
 }
 
-/* Banner */
+/* Banner Image */
 .banner img {
     width: 100%;
-    height: auto;
+    height: 250px;
+    object-fit: cover;
     display: block;
 }
 
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background: #005f99;
-    color: white;
-    padding: 30px 20px;
-    text-align: center;
-}
-
-nav {
-    background: #3498db;
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-}
-
-nav a:hover {
-    text-decoration: underline;
-}
-
+/* Main Section Styling */
 section {
     padding: 20px;
     max-width: 800px;
@@ -94,19 +71,7 @@ section {
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #ddd;
-    margin-top: 40px;
-}
-
-.banner img {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
+/* About Section Layout */
 .about {
     display: flex;
     align-items: center;
@@ -119,7 +84,7 @@ footer {
     flex-wrap: wrap;
 }
 
-
+/* Profile Photo */
 .profile {
     width: 120px;
     height: 160px;
@@ -128,8 +93,15 @@ footer {
     border: 2px solid #ccc;
 }
 
-
-
+/* Text Next to Photo */
 .about .text {
     flex: 1;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    margin-top: 40px;
 }
