@@ -8,7 +8,7 @@ body {
 
 /* Cloud Header Section */
 .hero {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/9/9b/Cumulus_clouds_in_fair_weather.jpeg');
+    background: url('images/topbanner.jpg');
     background-size: cover;
     background-position: center;
     padding: 10px 5px;
