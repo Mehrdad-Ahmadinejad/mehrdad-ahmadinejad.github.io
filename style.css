@@ -18,7 +18,7 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.rem; /* Name */
+    font-size: 2rem; /* Name */
     font-weight: bold;
     margin: 10px 0;
 }
@@ -29,7 +29,7 @@ body {
 }
 
 .hero h3 {
-    font-size: 1.rem; /* Welcome message */
+    font-size: 1rem; /* Welcome message */
     margin: 5px 0;
 }
 
@@ -71,7 +71,6 @@ section {
     box-shadow: none;
 }
 
-
 /* About Section Layout */
 .about {
     display: flex;
@@ -81,7 +80,7 @@ section {
     margin: auto;
     background: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     flex-wrap: wrap;
 }
 
@@ -109,7 +108,7 @@ footer {
     margin-top: 40px;
 }
 
-/* Welcome Section with Photo and Contact Info */
+/* Welcome Section with White Background */
 .welcome-section {
     width: 100%;
     background: white;
@@ -117,6 +116,7 @@ footer {
     padding: 30px 0;
 }
 
+/* Content inside Welcome Section */
 .content-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -127,23 +127,21 @@ footer {
     box-sizing: border-box;
 }
 
-
-
-
+/* Welcome Text */
 .welcome-text {
     flex: 1;
     min-width: 200px;
     margin-right: 50px;
-    padding-left: 50px; /* 👈 This moves the welcome message to the right */
+    padding-left: 50px; /* Shift text to the right */
 }
 
+/* Contact Info */
 .contact-box {
     width: 250px;
     min-width: 220px;
-    word-wrap: break-word;     /* ✅ Allows line breaking */
-    overflow-wrap: break-word; /* ✅ Ensures long words wrap */
+    word-wrap: break-word;     /* Allows line breaking */
+    overflow-wrap: break-word; /* Ensures long words wrap */
 }
-
 
 .contact-box h3 {
     margin-top: 20px;
