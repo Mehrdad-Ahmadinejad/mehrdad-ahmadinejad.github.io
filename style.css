@@ -19,15 +19,16 @@ body {
 
 
 .hero h1 {
-    font-size: 1.2rem;
-    margin-bottom: 3px;
+    font-size: 2.8rem;  /* Your name */
 }
 
 .hero h2 {
-    font-size: 1.rem;
-    margin-bottom: 2px;
+    font-size: 1.6rem;  /* Mechanical Engineering */
 }
 
+.hero h3 {
+    font-size: 1.2rem;  /* Welcome text */
+}
 
 
 /* Navigation Bar */
