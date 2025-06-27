@@ -65,13 +65,13 @@ footer {
 
 
 .profile {
-    max-width: 150px;
-    width: 100%;
-    height: auto;
+    width: 120px;
+    height: 160px;
+    object-fit: cover;
     border-radius: 10px;
     border: 2px solid #ccc;
-    padding: 5px;
 }
+
 
 
 .about .text {
