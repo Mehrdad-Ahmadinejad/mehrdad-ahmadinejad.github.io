@@ -11,7 +11,7 @@ body {
     background: url('https://upload.wikimedia.org/wikipedia/commons/9/9b/Cumulus_clouds_in_fair_weather.jpeg');
     background-size: cover;
     background-position: center;
-    padding: 30px 20px;
+    padding: 20px 20px;
     text-align: center;
     color: #000;
     border-bottom: 5px solid #3498db;
@@ -57,7 +57,7 @@ nav a:hover {
 /* Banner Image */
 .banner img {
     width: 100%;
-    height: 250px;
+    height: 200px;
     object-fit: cover;
     display: block;
 }
