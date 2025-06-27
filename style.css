@@ -89,8 +89,8 @@ section {
 
 /* Profile Photo */
 .profile {
-    width: 120px;
-    height: 160px;
+    width: 20px;
+    height: 60px;
     object-fit: cover;
     border-radius: 10px;
     border: 2px solid #ccc;
