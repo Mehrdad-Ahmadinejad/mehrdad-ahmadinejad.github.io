@@ -23,12 +23,12 @@ body {
 }
 
 .hero h2 {
-    font-size: 2rem;       /* Mechanical Engineering */
+    font-size: 1.5rem;       /* Mechanical Engineering */
     font-weight: normal;
 }
 
 .hero h3 {
-    font-size: 1.5rem;       /* Welcome text */
+    font-size: 1.rem;       /* Welcome text */
     font-weight: normal;
 }
 
