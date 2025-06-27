@@ -63,10 +63,14 @@ footer {
 }
 
 .profile {
-    width: 180px;
+    max-width: 150px;
+    width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    padding: 5px;
 }
+
 
 .about .text {
     flex: 1;
