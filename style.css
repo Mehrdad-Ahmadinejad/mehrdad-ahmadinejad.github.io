@@ -18,18 +18,18 @@ body {
 }
 
 .hero h1 {
-    font-size: 2.5rem; /* Name */
+    font-size: 2.rem; /* Name */
     font-weight: bold;
     margin: 10px 0;
 }
 
 .hero h2 {
-    font-size: 1.8rem; /* Mechanical Engineering */
+    font-size: 1.5rem; /* Mechanical Engineering */
     margin: 5px 0;
 }
 
 .hero h3 {
-    font-size: 1.2rem; /* Welcome message */
+    font-size: 1.rem; /* Welcome message */
     margin: 5px 0;
 }
 
