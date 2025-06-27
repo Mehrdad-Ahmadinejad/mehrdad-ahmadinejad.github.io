@@ -17,18 +17,21 @@ body {
     border-bottom: 5px solid #3498db;
 }
 
-
 .hero h1 {
-    font-size: 2.8rem;  /* Your name */
+    font-size: 2.5rem; /* Your name */
+    font-weight: bold;
 }
 
 .hero h2 {
-    font-size: 1.6rem;  /* Mechanical Engineering */
+    font-size: 2rem;       /* Mechanical Engineering */
+    font-weight: normal;
 }
 
 .hero h3 {
-    font-size: 1.2rem;  /* Welcome text */
+    font-size: 1.5rem;       /* Welcome text */
+    font-weight: normal;
 }
+
 
 
 /* Navigation Bar */
