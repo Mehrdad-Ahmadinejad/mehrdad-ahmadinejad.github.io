@@ -76,15 +76,16 @@ section {
 /* About Section Layout */
 .about {
     display: flex;
-    align-items: center;
-    gap: 15px;
-    padding: 20px;
-    max-width: 800px;
+    align-items: flex-start;
+    gap: 20px;
+    max-width: 1000px;
     margin: auto;
     background: white;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     flex-wrap: wrap;
 }
+
 
 /* Profile Photo */
 .profile {
@@ -147,11 +148,12 @@ footer {
 
 .contact-photo {
     width: 100%;
-    max-width: 180px;     /* limits width */
+    max-width: 180px;
     height: auto;
     border-radius: 10px;
-    margin-bottom: 10px;
+    border: 2px solid #ccc;
     display: block;
 }
+
 
 
