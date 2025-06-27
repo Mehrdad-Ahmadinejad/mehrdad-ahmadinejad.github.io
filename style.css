@@ -107,3 +107,47 @@ footer {
     background: #ddd;
     margin-top: 40px;
 }
+
+
+.welcome-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.welcome-text {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 30px;
+}
+
+.contact-box {
+    width: 250px;
+    min-width: 220px;
+}
+
+.contact-box h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+.contact-box a {
+    color: #005f99;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+.contact-photo {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
