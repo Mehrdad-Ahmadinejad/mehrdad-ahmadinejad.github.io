@@ -3,7 +3,7 @@
     background: url('https://upload.wikimedia.org/wikipedia/commons/9/9b/Cumulus_clouds_in_fair_weather.jpeg');
     background-size: cover;
     background-position: center;
-    padding: 60px 20px;
+    padding: 30px 20px;
     text-align: center;
     color: #000;
     border-bottom: 5px solid #3498db;
@@ -64,7 +64,7 @@ body {
 header {
     background: #005f99;
     color: white;
-    padding: 40px 20px;
+    padding: 30px 20px;
     text-align: center;
 }
 
