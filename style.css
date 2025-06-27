@@ -111,16 +111,22 @@ footer {
 
 /* Welcome Section with Photo and Contact Info */
 .welcome-section {
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 0;
+}
+
+.content-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px 40px;
-    max-width: 1100px;       /* ✅ Constrain total width */
-    margin: 0 auto;           /* ✅ Center the section */
-    background: white;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 40px;
     box-sizing: border-box;
 }
+
 
 
 
