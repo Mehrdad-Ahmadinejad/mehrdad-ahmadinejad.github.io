@@ -8,9 +8,8 @@ body {
 
 /* Cloud Header Section */
 .hero {
-    background: url('images/topbanner.jpg');
+    background: url('images/topbanner.jpg') no-repeat center center;
     background-size: cover;
-    background-position: center;
     padding: 20px 10px;
     text-align: center;
     color: #000;
@@ -18,18 +17,18 @@ body {
 }
 
 .hero h1 {
-    font-size: 2rem; /* Name */
+    font-size: 2rem;
     font-weight: bold;
     margin: 10px 0;
 }
 
 .hero h2 {
-    font-size: 1.5rem; /* Mechanical Engineering */
+    font-size: 1.5rem;
     margin: 5px 0;
 }
 
 .hero h3 {
-    font-size: 1rem; /* Welcome message */
+    font-size: 1rem;
     margin: 5px 0;
 }
 
@@ -71,76 +70,37 @@ section {
     box-shadow: none;
 }
 
-/* About Section Layout */
-.about {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
-    max-width: 1000px;
-    margin: auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap;
-}
-
-/* Profile Photo */
-.profile,
-.contact-photo {
-    width: 180px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    border: 2px solid #ccc;
-    display: block;
-}
-
-/* Text Next to Photo */
-.about .text {
-    flex: 1;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #ddd;
-    margin-top: 40px;
-}
-
-/* Welcome Section with White Background */
+/* Welcome Section */
 .welcome-section {
     width: 100%;
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 30px 0;
+    padding: 40px 0;
 }
 
-/* Content inside Welcome Section */
 .content-wrapper {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 1000px;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    max-width: 1100px;
     margin: auto;
     padding: 0 40px;
     box-sizing: border-box;
 }
 
-/* Welcome Text */
+/* Welcome Text Area */
 .welcome-text {
     flex: 1;
-    min-width: 200px;
-    margin-right: 50px;
-    padding-left: 50px; /* Shift text to the right */
+    margin-right: 40px;
 }
 
-/* Contact Info */
+/* Contact Box */
 .contact-box {
     width: 250px;
     min-width: 220px;
-    word-wrap: break-word;     /* Allows line breaking */
-    overflow-wrap: break-word; /* Ensures long words wrap */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .contact-box h3 {
@@ -155,4 +115,23 @@ footer {
 
 .contact-box a:hover {
     text-decoration: underline;
+}
+
+/* Contact Image */
+.contact-photo {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+    margin-top: 40px;
 }
