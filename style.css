@@ -1,3 +1,59 @@
+/* Cloud background */
+.hero {
+    background: url('https://upload.wikimedia.org/wikipedia/commons/9/9b/Cumulus_clouds_in_fair_weather.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    color: #000;
+    border-bottom: 5px solid #3498db;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.hero h3 {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(to right, #5fc9f3, #3498db);
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-radius: 0 0 10px 10px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Banner */
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
