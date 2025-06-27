@@ -44,3 +44,30 @@ footer {
     background: #ddd;
     margin-top: 40px;
 }
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile {
+    width: 180px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about .text {
+    flex: 1;
+}
