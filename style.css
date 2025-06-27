@@ -114,11 +114,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 30px;
-    width: 100%;              /* Full width */
-    background: white;        /* Full white background */
+    padding: 30px 40px;   /* 👈 Add left/right padding */
+    width: 100%;
+    background: white;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;  /* Ensures padding is inside the width */
 }
+
 
 .welcome-text {
     flex: 1;
