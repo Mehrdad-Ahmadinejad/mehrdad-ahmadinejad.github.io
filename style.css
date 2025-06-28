@@ -260,5 +260,11 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
+.research-gallery figcaption {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
+  text-align: center;     /* Center the text */
+}
 
 
