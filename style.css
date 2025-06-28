@@ -154,12 +154,19 @@ section {
 /* Publications Section */
 .publications-section {
     background: white;
-    padding: 40px 40px;
-    max-width: 1000px;
-    margin: auto;
+    padding: 40px 0;
+    width: 100%; /* full width background */
     box-sizing: border-box;
-    display: none; /* Hidden by default, shown via JS */
+    display: none; /* toggled via JS */
 }
+
+.publications-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
 
 .publications-section h2 {
     font-size: 2rem;
