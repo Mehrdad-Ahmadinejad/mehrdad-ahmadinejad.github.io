@@ -100,5 +100,18 @@
         }
     </script>
 
+<script>
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+        const section = this.textContent.trim().toLowerCase();
+
+        document.getElementById("welcome").style.display = section === "home" ? "block" : "none";
+        document.getElementById("publications").style.display = section === "publications" ? "block" : "none";
+    });
+});
+</script>
+
+    
 </body>
 </html>
