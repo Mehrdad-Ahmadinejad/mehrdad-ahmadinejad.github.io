@@ -62,7 +62,7 @@ nav a:hover {
     display: block;
 }
 
-/* Section Base Styles */
+/* Section Base Style */
 section {
     margin: 0;
     padding: 0;
@@ -89,7 +89,7 @@ section {
     box-sizing: border-box;
 }
 
-/* Welcome Text Area */
+/* Welcome Text */
 .welcome-text {
     flex: 1;
     margin-right: 40px;
@@ -128,7 +128,7 @@ section {
     margin-bottom: 15px;
 }
 
-/* Bottom Navigation Bar */
+/* Bottom Navigation */
 .bottom-nav {
     background: linear-gradient(to right, #5fc9f3, #3498db);
     padding: 12px 0;
@@ -155,9 +155,9 @@ section {
 .publications-section {
     background: white;
     padding: 40px 0;
-    width: 100%; /* full width background */
+    width: 100%;
     box-sizing: border-box;
-    display: none; /* toggled via JS */
+    display: none; /* Shown when clicked via JS */
 }
 
 .publications-content {
@@ -166,7 +166,6 @@ section {
     padding: 0 40px;
     box-sizing: border-box;
 }
-
 
 .publications-section h2 {
     font-size: 2rem;
@@ -182,6 +181,10 @@ section {
 .publications-section a {
     color: #005f99;
     text-decoration: underline;
+}
+
+.publications-section a:hover {
+    text-decoration: none;
 }
 
 .publications-section p {
