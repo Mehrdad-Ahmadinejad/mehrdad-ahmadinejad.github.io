@@ -249,6 +249,7 @@ section {
     gap: 20px;
     flex-wrap: wrap;
     justify-content: flex-start;
+    text-align: center;
 }
 
 .research-gallery img {
@@ -260,6 +261,15 @@ section {
     border-radius: 8px;
     box-shadow: 0 0 8px rgba(0,0,0,0.1);
 }
+
+.research-gallery figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+}
+
 .research-gallery figcaption {
   font-size: 0.9rem;
   color: #555;
