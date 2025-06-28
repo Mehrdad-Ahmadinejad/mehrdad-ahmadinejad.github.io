@@ -217,19 +217,17 @@
 
 <!-- Section Toggle Script -->
 <script>
-    window.onload = function() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const section = urlParams.get('section') || 'welcome-section';
-
+    function showSection(id) {
         const sections = document.querySelectorAll('.main-section, .research-section');
-        sections.forEach(section => section.style.display = 'none');
-
-        const target = document.getElementById(section);
+        sections.forEach(section => {
+            section.style.display = 'none';
+        });
+        const target = document.getElementById(id);
         if (target) {
             target.style.display = 'block';
-            window.scrollTo({ top: 0 });
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
-    };
+    }
 </script>
 
 
