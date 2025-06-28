@@ -18,9 +18,9 @@
 
     <!-- Navigation Bar -->
     <nav>
-        <a href="#" onclick="showSection('welcome-section')">Home</a>
-        <a href="#" onclick="showSection('publications-section')">Publications</a>
-        <a href="#" onclick="showSection('research')">Research</a>
+    <a href="?section=welcome-section">Home</a>
+    <a href="?section=publications-section">Publications</a>
+    <a href="?section=research">Research</a>
     </nav>
 
 
@@ -217,18 +217,21 @@
 
 <!-- Section Toggle Script -->
 <script>
-    function showSection(id) {
-        const sections = document.querySelectorAll('.main-section');
-        sections.forEach(section => {
-            section.style.display = 'none';
-        });
-        const target = document.getElementById(id);
+    window.onload = function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const section = urlParams.get('section') || 'welcome-section';
+
+        const sections = document.querySelectorAll('.main-section, .research-section');
+        sections.forEach(section => section.style.display = 'none');
+
+        const target = document.getElementById(section);
         if (target) {
             target.style.display = 'block';
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0 });
         }
-    }
+    };
 </script>
+
 
 
 </body>
