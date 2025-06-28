@@ -197,6 +197,7 @@ section {
     margin-bottom: 20px;
 }
 
+/* Research Section – Mirror of Publications Section */
 .research-section {
     background: white;
     padding: 40px 0;
@@ -207,9 +208,25 @@ section {
 
 .research-content {
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 40px;
     box-sizing: border-box;
+}
+
+.research-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.research-section h3,
+.research-section h4 {
+    margin-top: 30px;
+    font-size: 1.4rem;
+}
+
+.research-section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .research-topic {
