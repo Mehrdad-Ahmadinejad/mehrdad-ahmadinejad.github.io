@@ -277,4 +277,29 @@ section {
   text-align: center;     /* Center the text */
 }
 
+.research-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.side-by-side {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.side-by-side figure {
+  flex: 1 1 45%;
+  max-width: 45%;
+  text-align: center;
+}
+
+.side-by-side img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
 
