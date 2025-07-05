@@ -17,12 +17,12 @@ body {
 }
 
 .hero h1 {
-    font-size: 1.5rem;
+    font-size: 1.rem;
     margin: 5px 0;
 }
 
 .hero h2 {
-    font-size: 1.rem;
+    font-size: 1.5rem;
     margin: 5px 0;
 }
 
