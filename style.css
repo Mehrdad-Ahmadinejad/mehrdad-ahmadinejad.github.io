@@ -68,6 +68,10 @@ section {
     padding: 40px 0;
 }
 
+.welcome-text p {
+    text-align: justify;
+}
+
 .content-wrapper {
     display: flex;
     justify-content: space-between;
