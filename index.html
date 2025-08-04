@@ -189,6 +189,19 @@
       Selected results from ongoing and past research projects in fluid dynamics, soft materials, computational fluid dynamics (CFD) methods, transport phenomena, and renewable energy systems.
     </p>
 
+    <!-- Hydrogel Dynamics Group: only shown under Fluid Mechanics & Soft Materials -->
+    <div id="hydrogel-group" class="research-group" style="display: none;">
+      <h3 class="group-title">Hydrogel Dynamics</h3>
+      <figure class="group-item">
+        <img src="images/time_series_profile.png" alt="Wave propagation">
+        <figcaption>Hydrogel wave response under oscillating magnetic fields (hydrogel: green, water: blue).</figcaption>
+      </figure>
+      <figure class="group-item">
+        <img src="images/comparison.png" alt="Velocity comparison">
+        <figcaption>Velocity profiles: theoretical vs. numerical for water (blue) and hydrogel (green) with constant particle count.</figcaption>
+      </figure>
+    </div>
+
     <!-- Category Filter Buttons -->
     <div class="research-filter">
       <button class="filter-button active" data-filter="all">All</button>
@@ -199,20 +212,6 @@
 
     <!-- Gallery of Research Items -->
     <div class="research-gallery">
-
-      <!-- Hydrogel Dynamics Group: only shown under Fluid Mechanics & Soft Materials -->
-      <div class="research-group" data-category="fluid-materials">
-        <h3 class="group-title">Hydrogel Dynamics</h3>
-        <figure class="group-item">
-          <img src="images/time_series_profile.png" alt="Wave propagation">
-          <figcaption>Hydrogel wave response under oscillating magnetic fields (hydrogel: green, water: blue).</figcaption>
-        </figure>
-        <figure class="group-item">
-          <img src="images/comparison.png" alt="Velocity comparison">
-          <figcaption>Velocity profiles: theoretical vs. numerical for water (blue) and hydrogel (green) with constant particle count.</figcaption>
-        </figure>
-      </div>
-
       <!-- CFD items -->
       <figure class="research-item" data-category="cfd">
         <img src="images/velocity_field_animation.gif" alt="Animated Stokeslets Flow Field">
@@ -234,7 +233,6 @@
         <img src="images/heat_advection.gif" alt="Heat advection simulation">
         <figcaption>Simulation of 2D advection-diffusion showing temperature field evolution under steady flow.</figcaption>
       </figure>
-
     </div>
 
   </div>
@@ -243,6 +241,7 @@
 <!-- Filter Script -->
 <script>
   const filterButtons = document.querySelectorAll('.filter-button');
+  const hydrogelGroup = document.getElementById('hydrogel-group');
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
       // Toggle active state
@@ -250,16 +249,18 @@
       button.classList.add('active');
       const filter = button.getAttribute('data-filter');
 
-      // Show/hide Hydrogel Dynamics group
-      document.querySelectorAll('.research-group').forEach(group => {
-        group.style.display = (filter === 'fluid-materials') ? 'flex' : 'none';
-      });
+      // Show/hide Hydrogel Dynamics
+      hydrogelGroup.style.display = (filter === 'fluid-materials') ? 'flex' : 'none';
 
       // Show/hide individual research items
       document.querySelectorAll('.research-item').forEach(item => {
         item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
       });
     });
+  });
+  // Initial filter application
+  document.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('.filter-button.active').click();
   });
 </script>
 
