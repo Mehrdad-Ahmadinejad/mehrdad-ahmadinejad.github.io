@@ -329,7 +329,25 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
   }
-  .research-item {
-    display: block;
+  .research-group {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .group-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .group-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 0.5rem;
+  }
+  .research-item img {
+    width: 100%;
+    height: auto;
   }
 </style>
