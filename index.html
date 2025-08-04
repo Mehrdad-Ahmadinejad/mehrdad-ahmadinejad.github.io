@@ -180,27 +180,31 @@
 </div>
 </section>
 
- <!-- Updated Research Section with Category Filters -->
+<!-- Updated Research Section with Category Filters -->
 <section class="research-section" id="research" style="display: none;">
   <div class="research-content">
+
+    <!-- Intro Sentence -->
+    <p class="research-intro">
+      Selected results from ongoing and past research projects in fluid dynamics, soft materials, computational fluid dynamics (CFD) methods, transport phenomena, and renewable energy systems.
+    </p>
 
     <!-- Category Filter Buttons -->
     <div class="research-filter">
       <button class="filter-button active" data-filter="all">All</button>
-      <button class="filter-button" data-filter="fluid">Fluid Mechanics</button>
-      <button class="filter-button" data-filter="energy">Energy Systems</button>
-      <button class="filter-button" data-filter="materials">Soft Materials</button>
+      <button class="filter-button" data-filter="fluid-materials">Fluid Mechanics & Soft Materials</button>
       <button class="filter-button" data-filter="cfd">CFD Methods</button>
+      <button class="filter-button" data-filter="energy">Energy Systems</button>
     </div>
 
     <!-- Gallery of Research Items -->
     <div class="research-gallery">
-      <figure class="research-item" data-category="materials">
+      <figure class="research-item" data-category="fluid-materials">
         <img src="images/time_series_profile.png" alt="Wave propagation">
         <figcaption>Hydrogel wave response under oscillating magnetic fields (hydrogel: green, water: blue).</figcaption>
       </figure>
 
-      <figure class="research-item" data-category="fluid">
+      <figure class="research-item" data-category="fluid-materials">
         <img src="images/comparison.png" alt="Velocity comparison">
         <figcaption>Velocity profiles: theoretical vs. numerical for water (blue) and hydrogel (green) with constant particle count.</figcaption>
       </figure>
@@ -249,7 +253,7 @@
     });
   });
 </script>
-    
+
     <!-- Bottom Navigation -->
     <nav class="bottom-nav">
     <a href="?section=welcome-section">Home</a>
