@@ -298,3 +298,32 @@ section {
   border-radius: 6px;
 }
 
+<!-- Add the following CSS to style.css -->
+<style>
+  .research-filter {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .filter-button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border: none;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+  }
+  .filter-button.active,
+  .filter-button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  .research-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .research-item {
+    display: block;
+  }
+</style>
