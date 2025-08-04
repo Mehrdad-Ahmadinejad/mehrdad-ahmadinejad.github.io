@@ -200,7 +200,7 @@
     <!-- Gallery of Research Items -->
     <div class="research-gallery">
 
-      <!-- Hydrogel Dynamics Group -->
+      <!-- Hydrogel Dynamics Group: only shown under Fluid Mechanics & Soft Materials -->
       <div class="research-group" data-category="fluid-materials">
         <h3 class="group-title">Hydrogel Dynamics</h3>
         <figure class="group-item">
@@ -242,21 +242,29 @@
 
 <!-- Filter Script -->
 <script>
-  document.querySelectorAll('.filter-button').forEach(button => {
+  const filterButtons = document.querySelectorAll('.filter-button');
+  filterButtons.forEach(button => {
     button.addEventListener('click', () => {
+      // Toggle active state
       document.querySelector('.filter-button.active').classList.remove('active');
       button.classList.add('active');
       const filter = button.getAttribute('data-filter');
-      const groups = document.querySelectorAll('.research-group');
-      groups.forEach(group => {
-        group.style.display = (filter === 'all' || group.dataset.category === filter) ? '' : 'none';
+
+      // Show/hide Hydrogel Dynamics group
+      document.querySelectorAll('.research-group').forEach(group => {
+        group.style.display = (filter === 'fluid-materials') ? 'flex' : 'none';
       });
+
+      // Show/hide individual research items
       document.querySelectorAll('.research-item').forEach(item => {
         item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
       });
     });
   });
 </script>
+
+
+
 
     <!-- Bottom Navigation -->
     <nav class="bottom-nav">
