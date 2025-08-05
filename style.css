@@ -334,31 +334,32 @@ section {
     gap: 1rem;
   }
 
-  /* Hydrogel group container as single card with larger left image */
+  /* Hydrogel group container: remove card styling so it blends into page */
   #hydrogel-group {
-    background: #fff;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    padding: 1rem;
+    background: transparent !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    padding: 0 !important;
     display: grid;
     grid-template-columns: 6fr 3fr;
     gap: 1rem;
     margin-bottom: 1.5rem;
   }
 
-  /* Remove per-figure card styling inside hydrogel group */
-  #hydrogel-group .group-item {
-    background: transparent !important;
-    box-shadow: none !important;
-    padding: 0 !important;
-    overflow: visible !important;
-  }
-
+  /* Title aligned left */
   .group-title {
     font-size: 1.5rem;
     margin-bottom: 1rem;
     text-align: left;
     grid-column: 1 / -1;
+  }
+
+  /* Strip out individual figure cards inside hydrogel group */
+  #hydrogel-group .group-item {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    overflow: visible !important;
   }
 
   /* Ensure each hydrogel image fills its cell */
@@ -368,20 +369,18 @@ section {
     margin-bottom: 0.5rem;
   }
 
-  /* Only the first hydrogel image: allow it to grow larger */
+  /* Cap only the first hydrogel image if needed */
   #hydrogel-group .group-item:first-child img {
-    max-width: 800px;  /* adjust as needed */
+    max-width: 800px;  /* adjust as desired */
     width: 100%;
-    height: auto;
   }
 
-  /* All other research-gallery images */
+  /* All other research-gallery images retain their card look */
   .research-item img {
     width: 100%;
     height: auto;
   }
 
-  /* Card styling for all research items */
   .research-item {
     background: #fff;
     border-radius: 0.5rem;
