@@ -337,7 +337,7 @@ section {
   /* Hydrogel group as a mini-grid with larger left image */
   #hydrogel-group {
     display: grid;
-    grid-template-columns: 5fr 4fr;
+    grid-template-columns: 6fr 3fr;
     gap: 1rem;
     margin-bottom: 1.5rem;
   }
