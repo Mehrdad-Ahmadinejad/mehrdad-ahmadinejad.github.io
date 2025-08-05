@@ -386,6 +386,44 @@ section {
     padding: 1rem;
     overflow: hidden;
   }
+
+
+/* Make the entire research panel and its inner container pure white */
+.research-section,
+.research-content {
+  background-color: #fff !important;
+}
+
+/* Remove the “card” look around every item */
+.research-item,
+#hydrogel-group .group-item,
+.research-gallery figure {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Ensure the gallery itself has no padding or border */
+.research-gallery {
+  background: transparent !important;
+  padding: 0 !important;
+  gap: 1rem;
+}
+
+/* Remove any residual border/shadow around images */
+.research-item img,
+#hydrogel-group .group-item img,
+.research-gallery img {
+  box-shadow: none !important;
+  border: none !important;
+  background: transparent;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 </style>
 
 
