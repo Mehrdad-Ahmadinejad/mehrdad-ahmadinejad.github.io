@@ -370,5 +370,13 @@ section {
     padding: 1rem;
     overflow: hidden;
   }
+
+/* Only the first hydrogel image */
+#hydrogel-group .group-item:first-child img {
+  max-width: 800px;  /* or whatever px value you like */
+  width: 100%;
+  height: auto;
+}
+
 </style>
 
