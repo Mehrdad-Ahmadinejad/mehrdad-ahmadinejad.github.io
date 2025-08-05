@@ -431,6 +431,19 @@ html, body {
   background-color: #fff;
 }
 
+/* Default tab color */
+.filter-button {
+  background-color: #add8e6;   /* light blue */
+  color: #333;                 /* dark text for readability */
+}
+
+/* Active & hover state */
+.filter-button.active,
+.filter-button:hover {
+  background-color: #1e90ff;   /* dodger blue (darker) */
+  color: #fff;                 /* white text */
+}
+
 </style>
 
 
