@@ -189,7 +189,15 @@
       Selected results from ongoing and past research projects in fluid dynamics, soft materials, computational fluid dynamics (CFD) methods, transport phenomena, and renewable energy systems.
     </p>
 
-    <!-- Hydrogel Dynamics Group: only shown under Fluid Mechanics & Soft Materials -->
+    <!-- Filter Buttons (Top) -->
+    <div class="research-filter">
+      <button class="filter-button active" data-filter="all">All</button>
+      <button class="filter-button" data-filter="fluid-materials">Fluid Mechanics & Soft Materials</button>
+      <button class="filter-button" data-filter="cfd">CFD Methods</button>
+      <button class="filter-button" data-filter="energy">Energy Systems</button>
+    </div>
+
+    <!-- Hydrogel Dynamics Group (Fluid Mechanics & Soft Materials only) -->
     <div id="hydrogel-group" class="research-group" style="display: none;">
       <h3 class="group-title">Hydrogel Dynamics</h3>
       <figure class="group-item">
@@ -202,17 +210,8 @@
       </figure>
     </div>
 
-    <!-- Category Filter Buttons -->
-    <div class="research-filter">
-      <button class="filter-button active" data-filter="all">All</button>
-      <button class="filter-button" data-filter="fluid-materials">Fluid Mechanics & Soft Materials</button>
-      <button class="filter-button" data-filter="cfd">CFD Methods</button>
-      <button class="filter-button" data-filter="energy">Energy Systems</button>
-    </div>
-
-    <!-- Gallery of Research Items -->
+    <!-- Gallery of Other Research Items -->
     <div class="research-gallery">
-      <!-- CFD items -->
       <figure class="research-item" data-category="cfd">
         <img src="images/velocity_field_animation.gif" alt="Animated Stokeslets Flow Field">
         <figcaption>Velocity field in the xy-plane induced by a 3D network of regularized Stokeslets. Red dots indicate node positions where forces are computed from prescribed velocities.</figcaption>
@@ -228,11 +227,18 @@
         <figcaption>Simulation of Stokes flow using a staggered finite difference method with a level-set ghost-cell scheme enforcing no-slip on the sphere.</figcaption>
       </figure>
 
-      <!-- Energy item -->
       <figure class="research-item" data-category="energy">
         <img src="images/heat_advection.gif" alt="Heat advection simulation">
         <figcaption>Simulation of 2D advection-diffusion showing temperature field evolution under steady flow.</figcaption>
       </figure>
+    </div>
+
+    <!-- Filter Buttons (Bottom) -->
+    <div class="research-filter">
+      <button class="filter-button active" data-filter="all">All</button>
+      <button class="filter-button" data-filter="fluid-materials">Fluid Mechanics & Soft Materials</button>
+      <button class="filter-button" data-filter="cfd">CFD Methods</button>
+      <button class="filter-button" data-filter="energy">Energy Systems</button>
     </div>
 
   </div>
@@ -250,7 +256,7 @@
       const filter = button.getAttribute('data-filter');
 
       // Show/hide Hydrogel Dynamics
-      hydrogelGroup.style.display = (filter === 'fluid-materials') ? 'flex' : 'none';
+      hydrogelGroup.style.display = (filter === 'fluid-materials') ? 'grid' : 'none';
 
       // Show/hide individual research items
       document.querySelectorAll('.research-item').forEach(item => {
@@ -263,6 +269,7 @@
     document.querySelector('.filter-button.active').click();
   });
 </script>
+
 
 
 
