@@ -334,12 +334,24 @@ section {
     gap: 1rem;
   }
 
-  /* Hydrogel group as a mini-grid with larger left image */
+  /* Hydrogel group container as single card with larger left image */
   #hydrogel-group {
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
     display: grid;
     grid-template-columns: 6fr 3fr;
     gap: 1rem;
     margin-bottom: 1.5rem;
+  }
+
+  /* Remove per-figure card styling inside hydrogel group */
+  #hydrogel-group .group-item {
+    background: transparent !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    overflow: visible !important;
   }
 
   .group-title {
@@ -356,6 +368,13 @@ section {
     margin-bottom: 0.5rem;
   }
 
+  /* Only the first hydrogel image: allow it to grow larger */
+  #hydrogel-group .group-item:first-child img {
+    max-width: 800px;  /* adjust as needed */
+    width: 100%;
+    height: auto;
+  }
+
   /* All other research-gallery images */
   .research-item img {
     width: 100%;
@@ -370,13 +389,6 @@ section {
     padding: 1rem;
     overflow: hidden;
   }
-
-/* Only the first hydrogel image */
-#hydrogel-group .group-item:first-child img {
-  max-width: 800px;  /* or whatever px value you like */
-  width: 100%;
-  height: auto;
-}
-
 </style>
+
 
