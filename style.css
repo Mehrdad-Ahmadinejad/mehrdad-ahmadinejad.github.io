@@ -198,6 +198,7 @@ section {
   /* Research Section – Mirror of Publications Section */
   .research-section {
     background: white;
+    background-color: #fff;   /* ensure the section wrapper is white */
     padding: 40px 0;
     width: 100vw;  /* Full screen width */
     box-sizing: border-box;
