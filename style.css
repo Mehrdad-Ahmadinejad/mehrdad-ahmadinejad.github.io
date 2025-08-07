@@ -378,6 +378,7 @@ section {
   .research-item img {
     width: 100%;
     height: auto;
+    color: black ;
   }
 
   .research-item {
@@ -386,6 +387,7 @@ section {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     padding: 1rem;
     overflow: hidden;
+    color: black ;
   }
 
 
