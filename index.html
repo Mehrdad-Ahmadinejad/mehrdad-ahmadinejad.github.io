@@ -210,14 +210,14 @@
       </figure>
     </div>
 
-<figure class="research-item group-item small-figure" data-category="fluid-materials">
+<figure class="research-item group-item small-figure hide-in-all" data-category="fluid-materials">
   <img src="images/garphical_abstract.png" alt="Capture–release kinetics in hydrogels">
   <figcaption>
     Capture–release kinetics model for nanoparticles in a hydrogel and its elastic/viscous response map.
   </figcaption>
 </figure>
 
-<figure class="research-item group-item small-figure" data-category="fluid-materials">
+<figure class="research-item group-item small-figure hide-in-all" data-category="fluid-materials">
   <img src="images/POF2.png" alt="Hydrogel capture fraction time series">
   <figcaption>
     Time evolution of captured particle fraction under oscillatory forcing for various parameters including 
@@ -268,22 +268,27 @@
 <script>
   const filterButtons = document.querySelectorAll('.filter-button');
   const hydrogelGroup = document.getElementById('hydrogel-group');
+
   filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-      // Toggle active state
       document.querySelector('.filter-button.active').classList.remove('active');
       button.classList.add('active');
       const filter = button.getAttribute('data-filter');
 
-      // Show/hide Hydrogel Dynamics
+      // Show/hide Hydrogel Dynamics group
       hydrogelGroup.style.display = (filter === 'fluid-materials') ? 'grid' : 'none';
 
-      // Show/hide individual research items
+      // Show/hide individual items
       document.querySelectorAll('.research-item').forEach(item => {
-        item.style.display = (filter === 'all' || item.dataset.category === filter) ? '' : 'none';
+        const isAll = (filter === 'all');
+        const matchesCategory = (item.dataset.category === filter);
+        const isHiddenInAll = item.classList.contains('hide-in-all');
+
+        item.style.display = ( (isAll && !isHiddenInAll) || matchesCategory ) ? '' : 'none';
       });
     });
   });
+
   // Initial filter application
   document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.filter-button.active').click();
