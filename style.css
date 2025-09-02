@@ -461,6 +461,37 @@ html, body {
   margin-top: 0.5em;
 }
 
+/* Figure captions: left description + right reference */
+.research-item figcaption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: .75rem;
+}
+
+.research-item .caption-text {
+  flex: 1;
+  min-width: 0; /* allows text to truncate/wrap nicely */
+}
+
+.research-item .caption-ref {
+  font-style: italic;
+  white-space: nowrap; /* keeps the reference on one line */
+  opacity: 0.85;
+  font-size: 0.95em;
+}
+
+/* Optional: on small screens, drop the reference to the next line for readability */
+@media (max-width: 600px) {
+  .research-item figcaption {
+    flex-wrap: wrap;
+  }
+  .research-item .caption-ref {
+    margin-left: auto; /* still right-aligned on its own line */
+  }
+}
+
+
 </style>
 
 
