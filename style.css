@@ -451,7 +451,7 @@ html, body {
 
 /* Only shrink the new hydrogel figures */
 .small-figure img {
-  max-width: 40%;   /* adjust percentage as needed */
+  max-width: 10%;   /* adjust percentage as needed */
   height: auto;
   margin: 0 auto;   /* center the image */
   display: block;
