@@ -447,8 +447,6 @@ html, body {
   color: #fff;                 /* white text */
 }
 
-</style>
-
 /* Only shrink the new hydrogel figures */
 .small-figure img {
   max-width: 10%;   /* adjust percentage as needed */
@@ -462,5 +460,9 @@ html, body {
   font-size: 0.9em;
   margin-top: 0.5em;
 }
+
+</style>
+
+
 
 
