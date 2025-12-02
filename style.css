@@ -331,6 +331,8 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     color: black ;
+          /* NEW: vertical space above the CFD/energy set */
+    margin-top: 3rem;   /* increase/decrease to taste */
   }
 
   /* Hydrogel group container: remove card styling so it blends into page */
